@@ -1,38 +1,46 @@
 <template>
   <header>
-  <div id="todoitem">
-  <ol>
-    <!--
-      Now we provide each todo-item with the todo object
+    <div id="todoitem">
+      <ol>
+        <!--
+      Now we provide each todoitem with the todo object
       it's representing, so that its content can be dynamic.
       We also need to provide each component with a "key",
       which will be explained later.
     -->
-    <todo-item
-      v-for="item in groceryList"
-      v-bind:todo="item"
-      v-bind:key="item.id"
-    ></todo-item>
-  </ol>
-</div>
+        <!-- <todoitem
+          v-for="item in groceryList"
+          v-bind:todo="item"
+          v-bind:key="item.id"
+        ></todoitem> -->
+        <!-- <todoitemt></todoitemt> -->
+        <passcomponent>
+      </ol>
+    </div>
   </header>
 </template>
 
 <script>
-// Vue.component('todo-item', {
+// Vue.component('todoitem', {
 //   props: ['todo'],
 //   template: '<li>{{ todo.text }}</li>'
 // })
-const todoitem ={template: '<li>{{ todo.text }}</li', props: ['todo']}
-
+// const todoitemt = {name: "todoitemt", template: "<div>test</div>", props: ["todo"] };
+import passComponent from '/passComponent.vue'
 export default {
   name: "todoitem",
- data() {
-    return  [
-      { id: 0, text: 'Vegetables' },
-      { id: 1, text: 'Cheese' },
-      { id: 2, text: 'Whatever else humans are supposed to eat' }
-    ]
+  data() {
+    return {
+      groceryList: [
+        { id: 0, text: "Vegetables" },
+        { id: 1, text: "Cheese" },
+        { id: 2, text: "Whatever else humans are supposed to eat" },
+      ],
+    };
+  },
+  components: {
+    passComponent,
+    // todoitemt
   }
 };
 </script>

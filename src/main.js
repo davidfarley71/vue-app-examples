@@ -10,6 +10,7 @@ import declarativeRendering from './components/declarativeRendering.vue'
 import vbindTitle from './components/vbindTitle.vue'
 import ConditionalsandLoops from './components/ConditionalsandLoops.vue'
 import userImput from './components/userImput.vue'
+import passComponent from './components/passComponent.vue'
 // import todoitem from './components/todoitem.vue'
 
 
@@ -28,6 +29,7 @@ const routes = [
   { path: '/vbindTitle', component: vbindTitle },
   { path: '/ConditionalsandLoops', component: ConditionalsandLoops },
   { path: '/userImput', component: userImput },
+  { path: '/passComponent', component: passComponent },
   // { path: '/todoitem', component: todoitem},
  
 

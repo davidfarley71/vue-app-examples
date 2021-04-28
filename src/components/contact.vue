@@ -98,7 +98,7 @@ export default {
             this.title +
             '"'
         )
-        .then(res => {
+        .then(() => {
           console.log("post fired");
           this.name = "";
           this.phone = "";

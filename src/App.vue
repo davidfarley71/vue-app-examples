@@ -14,7 +14,7 @@
     <router-link class="navlink" to="/ConditionalsandLoops">ConditionalsandLoops</router-link>
     <router-link class="navlink" to="/userImput">userImput</router-link>
     <router-link class="navlink" to="/todoitem">todoitem</router-link>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <router-link class="navlink" to="/passComponent">passComponent</router-link>
     <div>
       <router-view></router-view>
     </div>
