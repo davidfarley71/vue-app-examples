@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <router-link class="navlink" to="/helloworld"
-      >vue</router-link
-    >
+    <img id="logo" alt="Vue logo" src="./assets/logo.png" />
+    <router-link class="navlink" to="/helloworld">vue</router-link>
     <router-link class="navlink" to="/about">about</router-link>
     <router-link class="navlink" to="/books">books</router-link>
     <router-link class="navlink" to="/contact">contact</router-link>
@@ -11,13 +9,20 @@
       >declarativeRendering</router-link
     >
     <router-link class="navlink" to="/vbindTitle">vbindTitle</router-link>
-    <router-link class="navlink" to="/ConditionalsandLoops">ConditionalsandLoops</router-link>
+    <router-link class="navlink" to="/ConditionalsandLoops"
+      >ConditionalsandLoops</router-link
+    >
     <router-link class="navlink" to="/userImput">userImput</router-link>
-    <router-link class="navlink" to="/todoitem">todoitem</router-link>
-    <router-link class="navlink" to="/passComponent">passComponent</router-link>
-    <div>
-      <router-view></router-view>
-    </div>
+    <router-link class="navlink" to="/importComponent"
+      >importComponent</router-link
+    >
+    <router-link class="navlink" to="/passingProps">passingProps</router-link>
+    <router-link class="navlink" to="/watcchAndComputed"
+      >watcchAndComputed</router-link
+    >
+    
+
+    <router-view></router-view>
   </div>
 </template>
 
@@ -37,9 +42,14 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+#logo {
+  display: flex;
+  margin: auto;
+}
 .navlink {
   padding: 6px;
   border-radius: 6px;
   margin: 15px;
+  display: inline-block;
 }
 </style>

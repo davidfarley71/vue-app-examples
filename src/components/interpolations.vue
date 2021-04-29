@@ -1,18 +1,15 @@
 <template>
   <header class="App-header">
-    <div id="app">
-     passComponent
-    </div>
+    
   </header>
 </template>
 
 <script>
 export default {
-  name: "passComponent",
-    data() {
+  name: "interpolations",
+  data() {
     return {
-      message: 'declarative rendered message, which means one way data rendering',
-      
+      rawHtml: '<span style="color:red">this should be red.</span>',
     };
   },
 };
