@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-
 import HelloWorld from './components/HelloWorld.vue'
 import about from './components/about.vue'
 import books from './components/books.vue'
@@ -14,6 +13,9 @@ import passingProps from './components/passProps/passingProps.vue'
 import importComponent from './components/importComponent.vue'
 import interpolations from './components/interpolations.vue'
 import watcchAndComputed from './components/watcchAndComputed.vue'
+import SpecialIsKeyword from './components/SpecialIsKeyword.vue'
+// import accordion from './components/accordion.vue'
+import checkboxes from './components/checkboxes.vue'
 
 
 Vue.config.productionTip = false
@@ -34,6 +36,10 @@ const routes = [
   { path: '/importComponent', component: importComponent},
   { path: '/interpolations', component: interpolations},
   { path: '/watcchAndComputed', component: watcchAndComputed},
+  { path: '/SpecialIsKeyword', component: SpecialIsKeyword},
+  // { path: '/accordion', component: accordion},
+  { path: '/checkboxes', component: checkboxes},
+
  
 
 ]

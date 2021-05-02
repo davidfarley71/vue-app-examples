@@ -20,8 +20,9 @@
     <router-link class="navlink" to="/watcchAndComputed"
       >watcchAndComputed</router-link
     >
-    
-
+    <router-link class="navlink" to="/SpecialIsKeyword">SpecialIsKeyword</router-link>
+    <router-link class="navlink" to="/accordion">accordion</router-link>
+    <router-link class="navlink" to="/checkboxes">checkboxes</router-link>
     <router-view></router-view>
   </div>
 </template>

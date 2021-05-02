@@ -30,7 +30,7 @@
       <br />
       {{ valuePassedUp }}
       <br />
-      {{productOf5}}
+      your input multiplied by 5:  {{ productOf5 }}
     </div>
   </header>
 </template>
@@ -56,7 +56,7 @@ export default {
       ],
       changeboolval: true,
       valuePassedUp: "Not changed yet",
-      productOf5: 5
+      productOf5: 5,
     };
   },
   components: {
