@@ -3,8 +3,8 @@
     <div id="ConditionalsandLoops">
       <h1>here we have a message that is only displayed based on a boolean</h1>
       <span v-if="seen">Now you see me</span>
-      <span v-else
-        >Now you dont ;)
+      <span v-else>
+        Now you dont ;)
         <div>
           A v-else element must immediately follow a v-if or a v-else-if element
           - otherwise it will not be recognized.

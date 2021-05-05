@@ -23,6 +23,14 @@
     <router-link class="navlink" to="/SpecialIsKeyword">SpecialIsKeyword</router-link>
     <router-link class="navlink" to="/accordion">accordion</router-link>
     <router-link class="navlink" to="/checkboxes">checkboxes</router-link>
+    <router-link class="navlink" to="/mediumDotComModal">mediumDotComModal</router-link>
+    <router-link class="navlink" to="/sass">sass</router-link>
+    <router-link class="navlink" to="/OfficialVuemodal">OfficialVuemodal</router-link>
+    <router-link class="navlink" to="/slotparent">slotparent</router-link>
+    <router-link class="navlink" to="/classAndStyleBindings">classAndStyleBindings</router-link>
+    <router-link class="navlink" to="/simpleCssModal">simpleCssModal</router-link>
+    <router-link class="navlink" to="/profileSearch">profileSearch</router-link>
+    <router-link class="navlink" to="/collapsable">collapsable</router-link>
     <router-view></router-view>
   </div>
 </template>
@@ -50,7 +58,7 @@ export default {
 .navlink {
   padding: 6px;
   border-radius: 6px;
-  margin: 15px;
+  margin: 1px;
   display: inline-block;
 }
 </style>
