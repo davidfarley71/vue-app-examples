@@ -25,6 +25,7 @@ import classAndStyleBindings from './components/classAndStyleBindings.vue'
 import simpleCssModal from './components/simpleCssModal.vue'
 import profileSearch from './components/profileSearch.vue'
 import collapsable from './components/collapsable.vue'
+import search from './components/2profileSearch/search.vue'
 
 
 Vue.config.productionTip = false
@@ -56,6 +57,7 @@ const routes = [
   { path: '/simpleCssModal', component: simpleCssModal },
   { path: '/profileSearch', component: profileSearch },
   { path: '/collapsable', component: collapsable },
+  { path: '/search', component: search },
 
 
 

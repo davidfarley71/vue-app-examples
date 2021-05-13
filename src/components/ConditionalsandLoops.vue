@@ -9,6 +9,9 @@
           A v-else element must immediately follow a v-if or a v-else-if element
           - otherwise it will not be recognized.
         </div>
+        <div>
+          add a 'key' attribute if you are rendering multiple of the same component with an if else. Otherwise, vue will cache the props and you will get funky results.
+        </div>
       </span>
     </div>
     <h1>here we loop through an object and put out the text values</h1>

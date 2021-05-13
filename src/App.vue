@@ -31,6 +31,7 @@
     <router-link class="navlink" to="/simpleCssModal">simpleCssModal</router-link>
     <router-link class="navlink" to="/profileSearch">profileSearch</router-link>
     <router-link class="navlink" to="/collapsable">collapsable</router-link>
+    <router-link class="navlink" to="/search">search</router-link>
     <router-view></router-view>
   </div>
 </template>

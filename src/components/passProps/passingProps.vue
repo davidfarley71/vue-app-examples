@@ -69,6 +69,7 @@ export default {
     multiplyBy5x: function () {
       this.productOf5 *= 5;
     },
+    
   },
 };
 </script>

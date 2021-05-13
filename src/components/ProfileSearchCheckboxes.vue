@@ -8,8 +8,8 @@
         >
 
         <template v-slot:contents>
-          <span v-bind:style='checkboxItemClass' v-for="sub in item" :key="sub">
-            <input 
+          <span  v-bind:style='checkboxItemClass' v-for="sub in item" :key="sub">
+            <input
               type="checkbox"
               v-bind:id="sub"
               v-bind:value="sub"
@@ -27,17 +27,21 @@
 import collapsable from "./collapsable.vue";
 import dat from "../assets/data.json";
 export default {
-  props:['checkboxCategory','checkboxItem'],
-  name: "checkboxes",
+  props:['checkboxCategory','checkboxItem','inactiveItems','checked'],
+  name: "ProfileSearchCheckboxes",
   data() {
     return {
-      
       info: dat,
-      checkedValues: [], //you can pass in values here and they will be checked on page
+      checkedValues: this.checked, //you can pass in values here and they will be checked on page load
       checkboxCategoryclass: this.checkboxCategory,
-      checkboxItemClass: this.checkboxItem
-
+      checkboxItemClass: this.checkboxItem,
+      inactive: this.inactiveItems,
     };
+  },
+  computed:{
+      emitCheckedValues: function(){
+          return this.$emit('updateparentCheckedValues', this.checkedValues)
+      }
   },
   components: {
     collapsable,

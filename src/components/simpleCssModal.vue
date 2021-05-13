@@ -54,6 +54,9 @@ export default {
 
 
 <style lang="scss" scoped>
+#mymodal{
+  height: -webkit-fill-available;
+}
 .modalhid {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -75,7 +78,7 @@ export default {
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: -webkit-fill-available; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
